@@ -1,8 +1,9 @@
 package com.skakundima.spring.mvc_hibernate_aop.controller;
 
 import com.skakundima.spring.mvc_hibernate_aop.models.User;
-import com.skakundima.spring.mvc_hibernate_aop.services.UserServiceImpl;
+
 import com.skakundima.spring.mvc_hibernate_aop.services.UsersService;
+import com.skakundima.spring.mvc_hibernate_aop.services.UsersServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +14,7 @@ public class UsersController {
     private final UsersService usersService;
 
     @Autowired
-    public UsersController(UserServiceImpl usersService) {
+    public UsersController(UsersServiceImpl usersService) {
         this.usersService = usersService;
     }
 

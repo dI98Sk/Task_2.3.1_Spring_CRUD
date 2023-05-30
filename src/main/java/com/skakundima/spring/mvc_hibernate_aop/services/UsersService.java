@@ -1,5 +1,7 @@
 package com.skakundima.spring.mvc_hibernate_aop.services;
 
+import com.skakundima.spring.mvc_hibernate_aop.models.User;
+
 import java.util.List;
 
 public interface UsersService {
