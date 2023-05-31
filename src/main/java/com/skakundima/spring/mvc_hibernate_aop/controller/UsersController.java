@@ -5,11 +5,13 @@ import com.skakundima.spring.mvc_hibernate_aop.models.User;
 import com.skakundima.spring.mvc_hibernate_aop.services.UsersService;
 import com.skakundima.spring.mvc_hibernate_aop.services.UsersServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
+@Controller
 public class UsersController {
     private final UsersService usersService;
 

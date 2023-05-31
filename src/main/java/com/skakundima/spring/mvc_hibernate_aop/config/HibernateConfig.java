@@ -53,7 +53,7 @@ public class HibernateConfig {
     }
 
     @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
+    public LocalContainerEntityManagerFactoryBean getEntityManagerFactory() {
 
         final LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
 
@@ -68,10 +68,10 @@ public class HibernateConfig {
     }
 
     @Bean(name = "transactionManager")
-    public PlatformTransactionManager TransactionManager() {
+    public PlatformTransactionManager getTransactionManager() {
 
         JpaTransactionManager transactionManager = new JpaTransactionManager();
-        transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
+        transactionManager.setEntityManagerFactory(getEntityManagerFactory().getObject());
 
         return transactionManager;
     }
