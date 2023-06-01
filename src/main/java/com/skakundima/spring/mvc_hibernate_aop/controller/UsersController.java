@@ -21,7 +21,7 @@ public class UsersController {
     }
 
 
-    @GetMapping("/")
+    @GetMapping("/")// RENAME 
     public String users(@ModelAttribute("user") User user, Model model, Long id) {
 
 

@@ -10,7 +10,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-@Component
+//@Component
 @Transactional(readOnly = true)
 public class UserDAOImpl implements UserDAO {
 

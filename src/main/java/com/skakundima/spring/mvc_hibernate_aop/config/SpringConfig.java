@@ -17,7 +17,7 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 @Configuration
 @ComponentScan("com.skakundima.spring.mvc_hibernate_aop")
 @EnableWebMvc
-public class SpringConfig implements WebMvcConfigurer {
+public class SpringConfig implements WebMvcConfigurer { // change name
     private final ApplicationContext applicationContext;
 
     @Autowired

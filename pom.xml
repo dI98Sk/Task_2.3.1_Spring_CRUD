@@ -13,6 +13,11 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 
+
+
+
+
+
     <!--<spring.version>5.3.21</spring.version>
     <hibernate.version>5.6.9.Final</hibernate.version>-->
   </properties>
@@ -56,12 +61,12 @@
       <version>8.0.32</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/com.mchange/c3p0 &ndash;&gt;
     <dependency>
       <groupId>com.mchange</groupId>
       <artifactId>c3p0</artifactId>
       <version>0.9.5.2</version>
-    </dependency>
+    </dependency>-->
 
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
     <dependency>
@@ -82,7 +87,7 @@
     <dependency>
       <groupId>org.thymeleaf</groupId>
       <artifactId>thymeleaf-spring5</artifactId>
-      <version>3.1.0.M2</version>
+      <version>3.0.11.RELEASE</version>
     </dependency>
 
 
@@ -104,7 +109,19 @@
 
 
   </dependencies>
+
   <build>
     <finalName>Task_2.3.1_Spring_CRUD</finalName>
+    <plugins><plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.3.1</version>
+    </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+      </plugin></plugins>
   </build>
+
 </project>
