@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.List;
 
-//@Component
+
 @Service
 public class UsersServiceImpl implements UsersService {
 
@@ -21,35 +21,30 @@ public class UsersServiceImpl implements UsersService {
     }
 
     @Override
-    //@Transactional
     public List<User> findAll() {
 
         return userDAO.findAll();
     }
 
     @Override
-    //@Transactional
     public User findOne(Long id) {
 
         return userDAO.findOne(id);
     }
 
     @Override
-    //@Transactional
     public void save(User user) {
 
         userDAO.save(user);
     }
 
     @Override
-    //@Transactional
     public void delete(Long id) {
 
         userDAO.delete(id);
     }
 
     @Override
-    //@Transactional
     public void update(Long id, User user) {
         userDAO.update(id, user);
     }

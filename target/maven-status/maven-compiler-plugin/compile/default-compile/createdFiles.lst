@@ -4,6 +4,6 @@ com/skakundima/spring/mvc_hibernate_aop/services/UsersService.class
 com/skakundima/spring/mvc_hibernate_aop/models/User.class
 com/skakundima/spring/mvc_hibernate_aop/config/DispatcherServletInitializer.class
 com/skakundima/spring/mvc_hibernate_aop/services/UsersServiceImpl.class
-com/skakundima/spring/mvc_hibernate_aop/config/SpringConfig.class
 com/skakundima/spring/mvc_hibernate_aop/config/HibernateConfig.class
+com/skakundima/spring/mvc_hibernate_aop/config/WebConfig.class
 com/skakundima/spring/mvc_hibernate_aop/controller/UsersController.class

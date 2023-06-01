@@ -13,11 +13,6 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 
-
-
-
-
-
     <!--<spring.version>5.3.21</spring.version>
     <hibernate.version>5.6.9.Final</hibernate.version>-->
   </properties>
@@ -61,7 +56,7 @@
       <version>8.0.32</version>
     </dependency>
 
-<!--    &lt;!&ndash; https://mvnrepository.com/artifact/com.mchange/c3p0 &ndash;&gt;
+     <!--https://mvnrepository.com/artifact/com.mchange/c3p0
     <dependency>
       <groupId>com.mchange</groupId>
       <artifactId>c3p0</artifactId>
@@ -123,5 +118,4 @@
         <version>3.8.1</version>
       </plugin></plugins>
   </build>
-
 </project>

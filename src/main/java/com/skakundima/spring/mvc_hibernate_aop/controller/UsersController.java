@@ -21,8 +21,8 @@ public class UsersController {
     }
 
 
-    @GetMapping("/")// RENAME 
-    public String users(@ModelAttribute("user") User user, Model model, Long id) {
+    @GetMapping("/")
+    public String getUsers(@ModelAttribute("user") User user, Model model, Long id) {
 
 
         model.addAttribute("users", usersService.findAll());
